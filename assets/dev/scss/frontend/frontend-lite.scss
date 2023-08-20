@@ -1,4 +1,5 @@
 @import "../global/global";
+@import "../global/aspect_ratio"; // TODO: Deprecated in v3.11
 @import "breakpoints/proxy";
 @import "../helpers/mixins";
 
@@ -7,8 +8,8 @@
 @import "grid";
 @import "devices";
 
-// E-icons classes being used in the frontend.
-@import "eicons";
+// Container
+@import "container";
 
 //Forms (Input, Textarea, Select Etc..)
 @import "forms";
@@ -16,11 +17,8 @@
 // Widgets Global
 @import "widgets-global";
 
-// Slick
-@import "slick";
-
 // Swiper
-@import "swiper";
+@import "swiper-customisations";
 
 // Lightbox
 @import "lightbox";

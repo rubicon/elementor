@@ -50,7 +50,7 @@
 			max-width: 100%;
 			height: 100%;
 			cursor: pointer;
-			transition: $transition-hover;
+			transition: var(--e-a-transition-hover);
 			position: relative;
 			overflow: hidden;
 			border-radius: inherit;
@@ -90,7 +90,7 @@
 	}
 }
 
-.elementor-editor__ui-state__color-picker {
+.e-ui-state--elements-color-picker-color-picking__on {
 	*:not( .e-element-color-picker__swatch ) {
 		cursor: url( '../images/eyedropper.svg' ) 0 20, pointer;
 	}

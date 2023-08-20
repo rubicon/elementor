@@ -110,6 +110,9 @@ class Widget_Heading extends Widget_Base {
 			[
 				'label' => esc_html__( 'Title', 'elementor' ),
 				'type' => Controls_Manager::TEXTAREA,
+				'ai' => [
+					'type' => 'text',
+				],
 				'dynamic' => [
 					'active' => true,
 				],
@@ -240,6 +243,14 @@ class Widget_Heading extends Widget_Base {
 				'global' => [
 					'default' => Global_Typography::TYPOGRAPHY_PRIMARY,
 				],
+				'selector' => '{{WRAPPER}} .elementor-heading-title',
+			]
+		);
+
+		$this->add_group_control(
+			Group_Control_Text_Stroke::get_type(),
+			[
+				'name' => 'text_stroke',
 				'selector' => '{{WRAPPER}} .elementor-heading-title',
 			]
 		);
